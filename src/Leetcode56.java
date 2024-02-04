@@ -15,7 +15,6 @@ public class Leetcode56 {
         List<int[]> ansList = new ArrayList<int[]>();
         int start = intervals[0][0],
                 end = intervals[0][1];
-        int[] interval = new int[2];
         for(int i = 0; i < intervals.length; i++){
             if(intervals[i][0] == start){
                 end = Math.max(end, intervals[i][1]);
